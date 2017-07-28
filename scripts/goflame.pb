@@ -7,7 +7,7 @@ goflame:
 ;
 
 flame-para:
-	obvious-problem | rhetorical-question | call-to-arms | i-dont-see | personal-attack | sarcastic-agreement | get-off-my-lawn
+	obvious-problem | rhetorical-question | call-to-arms | i-dont-see | personal-attack | sarcastic-agreement | get-off-my-lawn | prediction
 ;
 
 // convert the first character of a string to its uppercase equivalent
@@ -24,12 +24,17 @@ go-prog:
 	"go tool"
 ;
 
+syntax-feature:
+	"hard-tab" |
+	"semi-colon" |
+	"whitespace character"
+;
+
 language-feature:
-	"whitespace character" |
+	syntax-feature |
 	"lambda function" |
 	"function literal" |
 	"concurrency mechanism" |
-	"semi-colon" |
 	"pre-processor"
 
 ;
@@ -42,9 +47,18 @@ other-language:
 	"PHP"
 ;
 
+personage:
+	"Rob" |
+	"bradfitz"
+
 people:
 	"folks on this thread" |
 	"core developers"
+;
+
+go-org:
+	"Google" |
+	"the development team"
 ;
 
 time-period:
@@ -105,7 +119,8 @@ disbelief:
 insult:
 	"Either the " role "s must admit their " artifact " is poorly designed, or they need to fix the problem!" |
 	"I have suffered for years from people like you who insist on having their favourite style when it comes to " language-feature "s." |
-	"I'm sorry to say you seem to have a very myopic view of " activity " in general."
+	"I'm sorry to say you seem to have a very myopic view of " activity " in general." |
+	"I'm sorry your reply makes no sense to me."
 ;
 
 emphasis:
@@ -146,7 +161,7 @@ call-to-arms:
 call-to-arms-address:
 	"C'mon google" |
 	"C'mon " people |
-	"C'mon Rob"
+	"C'mon " personage
 ;
 
 call-to-arms-when:
@@ -157,7 +172,7 @@ call-to-arms-when:
 
 call-to-arms-do-better:
 	"you can (and should) do better than this..." |
-	"you ought to have invited an expert"
+	"you ought to have invited an expert."
 ;
 
 i-dont-see:
@@ -239,4 +254,17 @@ old-fact:
 thats-why-get-off-my-lawn:
 	"it is the defacto standard." |
 	"it is the most efficient method of " activity "."
+;
+
+prediction:
+	"I predict that this will be " reverted " in a few " time-period " when " go-org " realizes that " realization
+;
+
+reverted:
+	"reverted" | "abandoned" | "left to die"
+;
+
+realization:
+	"code is read in a lot of different places, most of which never display " syntax-feature " correctly"
+	"no-one will ever use it."
 ;
