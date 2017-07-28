@@ -45,7 +45,6 @@ problem-description:
 ;
 
 disbelief:
-// FIXME placeholder text
 	"I can't believe anyone would program in such a shoddy language." |
 	question
 ;
@@ -64,7 +63,7 @@ rhetorical-question:
 
 question:
 	"Yes, I know I can write my own translator - but why?" |
-	"Is this just an error in \"" go-prog ""\" or an error in the language spec?" |
+	"Is this just an error in \"" go-prog "\" or an error in the language spec?" |
 	"Really, lose adoption over compiler laziness?" |
 	"So, I ask you - why is the above code illegal?" |
 	"Why are you blindly accepting something so foolish?" |
@@ -78,7 +77,7 @@ ill-just-use-x:
 sarcastic-answer:
 	"Very nice.  LOL." |
 	"Give me a break..." |
-	"So much for \"" go-prog ""\" reformatting legal code into the approved format."
+	"So much for \"" go-prog "\" reformatting legal code into the approved format."
 ;
 
 call-to-arms:
@@ -102,7 +101,7 @@ i-dont-see:
 ;
 
 considering-start-part:
-	"Considering " go-prog " throws the same error" |
+	"Considering \"" go-prog "\" throws the same error" |
 	"Given that, why not extend your metaphor to say that \"" language-rule "\""
 ;
 
@@ -128,7 +127,7 @@ turn-question-back:
 ;
 
 clarify-audience:
-	"As for the folks on the thread saying \"" please-take-a-break ""\" - sorry."
+	"As for the folks on the thread saying \"" please-take-a-break "\" - sorry."
 ;
 
 please-take-a-break:
