@@ -160,6 +160,6 @@ take-the-biscuit:
 ;
 
 there-is-not:
-	"there is no full formal EBNF grammar in the appendix."
+	"there is no full formal EBNF grammar in the appendix." |
 	"it is not the grammar."
 ;
