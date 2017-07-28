@@ -93,19 +93,19 @@ sarcastic-answer:
 ;
 
 call-to-arms:
-	address-start-part ", " when-middle-part " " do-better-end-part
+	call-to-arms-address ", " call-to-arms-when " " call-to-arms-do-better
 ;
 
-address-start-part:
+call-to-arms-address:
 	"C'mon google" |
 	"C'mon core developers"
 ;
 
-when-middle-part:
+call-to-arms-when:
 	"when trying to pitch a new language"
 ;
 
-do-better-end-part:
+call-to-arms-do-better:
 	"you can (and should) do better than this..."
 ;
 
