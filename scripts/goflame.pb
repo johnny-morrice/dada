@@ -7,7 +7,7 @@ goflame:
 ;
 
 flame-para:
-	obvious-problem | rhetorical-question | call-to-arms | i-dont-see | personal-attack | sarcastic-agreement
+	obvious-problem | rhetorical-question | call-to-arms | i-dont-see | personal-attack | sarcastic-agreement | get-off-my-lawn
 ;
 
 // convert the first character of a string to its uppercase equivalent
@@ -29,7 +29,8 @@ language-feature:
 	"lambda function" |
 	"function literal" |
 	"concurrency mechanism" |
-	"semi-colon"
+	"semi-colon" |
+	"pre-processor"
 
 ;
 
@@ -37,7 +38,14 @@ other-language:
 	"Java" |
 	"Cobol" |
 	"INTERCAL" |
-	"assembler"
+	"assembler" |
+	"PHP"
+;
+
+people:
+	"folks on this thread" |
+	"core developers" |
+	"clique in control"
 ;
 
 language-rule:
@@ -54,8 +62,7 @@ problem-description:
 ;
 
 disbelief:
-	"I can't believe anyone would program in such a shoddy language." |
-	question
+	"So I can't believe you would blindly agree with the " people "."
 ;
 
 insult:
@@ -82,7 +89,9 @@ question:
 ;
 
 ill-just-use-x:
-	"Heck, I can just stick with " other-language "..."
+	"Heck, I can just stick with " other-language "..." |
+	"You might as well just use " other-language "." |
+	"Why not just do it in " other-language "?"
 ;
 
 sarcastic-answer:
@@ -130,11 +139,10 @@ personal-attack:
 
 statement:
 	"There are things in a programming language that MUST be enforced, this should not be one of them." |
-	"The \"really simple\" semicolon injection rules are violating the language grammar by incorrectly inserting a semi-colon where one was not required, nor requested." |
+	"The \"really simple\" " language-feature " injection rules are violating the language grammar by incorrectly inserting a semi-colon where one was not required, nor requested." |
 	"Ignoring the problem or flippantly asserting there is no problem, is the worst thing they can do as it goes against the very reasons you design a new language for in the first place." |
 	"A programming language is a language and language is supposed to make sense in regards to its intended purpose." |
-	"The behavior of the pre-processor is wrong." |
-	i-dont-see
+	"The behavior of the " language-feature "is wrong."
 ;
 
 turn-question-back:
@@ -142,12 +150,7 @@ turn-question-back:
 ;
 
 clarify-audience:
-	as-for-the-folks " saying \"" please-take-a-break "\" - sorry."
-;
-
-as-for-the-folks:
-	"As for the folks on this thread" |
-	"As for the core devs"
+	"As for the " people " saying \"" please-take-a-break "\" - sorry."
 ;
 
 please-take-a-break:
@@ -162,8 +165,14 @@ please-take-a-break:
 
 sarcastic-agreement:
 	"Yes, I agree with you that " [ "you" | "one" ] " " [ "can" | "cannot" ] " " take-the-biscuit |
-	"Yes, looking at the documentation page " there-is-not emphasis
-	"Ok, we can end the discussion but" there-is-not
+	"Yes, looking at the documentation page " there-is-not emphasis |
+	"Ok, we can end the discussion but " there-is-not |
+	"Clearly users of Go have to live with this or change language, but " still-be-wrong
+;
+
+still-be-wrong:
+	go-prog " rules may still be wrong." |
+	people " cannot force me to use it."
 ;
 
 take-the-biscuit:
@@ -174,4 +183,19 @@ take-the-biscuit:
 there-is-not:
 	"there is no full formal EBNF grammar in the appendix." |
 	"it is not the grammar."
+;
+
+get-off-my-lawn:
+	"I've been programming for many years and " old-fact ", and " thats-why-get-off-my-lawn
+;
+
+old-fact:
+	"the Allman style was taught in schools" |
+	"I can tell you that " other-language " is the most familiar language for many developers"
+;
+
+thats-why-get-off-my-lawn:
+	"it is the defacto standard." |
+	"it is the most efficient method" |
+	"I cannot stand change."
 ;
