@@ -2,11 +2,12 @@
 // Golang flame generator
 // v0.0.1 Johnny Morrice 2017-07-28
 
-goflame: flame-para
+goflame:
+	flame-para
 ;
 
 flame-para:
-obvious-problem | rhetorical-question | call-to-arms | i-dont-see | personal-attack
+	obvious-problem | rhetorical-question | call-to-arms | i-dont-see | personal-attack
 ;
 
 // convert the first character of a string to its uppercase equivalent
@@ -15,8 +16,28 @@ obvious-problem | rhetorical-question | call-to-arms | i-dont-see | personal-att
 ".*": 0 u ;
 ;
 
+go-prog:
+	"go fmt" |
+	"go install" |
+	"go vet" |
+	"go build" |
+	"go tool"
+;
+
+language-feature:
+	"whitespace character" |
+	"lambda function" |
+	"function literal" |
+	"concurrency mechanism"
+;
+
+language-rule:
+	"one space between the function name and start of the code block is legal but 2 spaces is illegal" |
+	"exported function names start with an uppercase character"
+;
+
 obvious-problem:
-problem-description " " disbelief " " [ begging | insult | emphasis ]
+	problem-description " " disbelief " " [ call-to-arms | insult | emphasis ]
 ;
 
 problem-description:
@@ -27,11 +48,6 @@ disbelief:
 // FIXME placeholder text
 	"I can't believe anyone would program in such a shoddy language." |
 	question
-;
-
-begging:
-// FIXME placeholder text
-	"Won't Google do something?"
 ;
 
 insult:
@@ -48,7 +64,7 @@ rhetorical-question:
 
 question:
 	"Yes, I know I can write my own translator - but why?" |
-	"Is this just an error in \"go fmt\" or an error in the language spec?" |
+	"Is this just an error in \"" go-prog ""\" or an error in the language spec?" |
 	"Really, lose adoption over compiler laziness?" |
 	"So, I ask you - why is the above code illegal?" |
 	"Why are you blindly accepting something so foolish?" |
@@ -62,7 +78,7 @@ ill-just-use-x:
 sarcastic-answer:
 	"Very nice.  LOL." |
 	"Give me a break..." |
-	"So much for \"go fmt\" reformatting legal code into the approved format."
+	"So much for \"" go-prog ""\" reformatting legal code into the approved format."
 ;
 
 call-to-arms:
@@ -86,11 +102,13 @@ i-dont-see:
 ;
 
 considering-start-part:
-	"Considering go fmt throws the same error"
+	"Considering " go-prog " throws the same error" |
+	"Given that, why not extend your metaphor to say that \"" language-rule "\""
 ;
 
 how-can-it-be-end-part:
-	"I don't see how that is true."
+	"I don't see how that is true." |
+	"why favor one " language-feature " over another?"
 ;
 
 personal-attack:
@@ -101,6 +119,7 @@ statement:
 	"There are things in a programming language that MUST be enforced, this should not be one of them." |
 	"The \"really simple\" semicolon injection rules are violating the language grammar by incorrectly inserting a semi-colon where one was not required, nor requested." |
 	"Ignoring the problem or flippantly asserting there is no problem, is the worst thing they can do as it goes against the very reasons you design a new language for in the first place." |
+	"A programming language is a language and language is supposed to make sense in regards to its intended purpose." |
 	i-dont-see
 ;
 
@@ -109,5 +128,10 @@ turn-question-back:
 ;
 
 clarify-audience:
-	"As for the folks on the thread saying \"get over it\" - sorry."
+	"As for the folks on the thread saying \"" please-take-a-break ""\" - sorry."
+;
+
+please-take-a-break:
+	"get over it" |
+	"go home"
 ;
