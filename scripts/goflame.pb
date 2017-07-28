@@ -48,6 +48,10 @@ people:
 	"clique in control"
 ;
 
+time-period:
+	"years" | "months" | "days" | "hours"
+;
+
 language-rule:
 	"one space between the function name and start of the code block is legal but 2 spaces is illegal" |
 	"exported function names start with an uppercase character"
@@ -171,8 +175,8 @@ sarcastic-agreement:
 ;
 
 still-be-wrong:
-	go-prog " rules may still be wrong." |
-	people " cannot force me to use it."
+	"\"" go-prog "\" rules may still be wrong." |
+	people " cannot force my hand."
 ;
 
 take-the-biscuit:
@@ -182,11 +186,12 @@ take-the-biscuit:
 
 there-is-not:
 	"there is no full formal EBNF grammar in the appendix." |
-	"it is not the grammar."
+	"it is not the grammar." |
+	"I do not understand why."
 ;
 
 get-off-my-lawn:
-	"I've been programming for many years and " old-fact ", and " thats-why-get-off-my-lawn
+	"I've been programming for many " time-period " and " old-fact ", and " thats-why-get-off-my-lawn
 ;
 
 old-fact:
