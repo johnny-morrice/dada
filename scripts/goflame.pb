@@ -48,7 +48,7 @@ rhetorical-question:
 
 question:
 	"Yes, I know I can write my own translator - but why?" |
-	"Is this just an error in \"go fmt\" or an error in the language spec?"
+	"Is this just an error in \"go fmt\" or an error in the language spec?" |
 	"Really, lose adoption over compiler laziness?" |
 	"So, I ask you - why is the above code illegal?" |
 	"Why are you blindly accepting something so foolish?" |
@@ -94,13 +94,13 @@ how-can-it-be-end-part:
 ;
 
 personal-attack:
-	clarify-audience " " [ [ insult | statement ] | turn-question-back " " statement ]
+	clarify-audience " " [ insult | statement | turn-question-back " " statement ]
 ;
 
 statement:
-	"There are things in a programming language that MUST be enforced, this should not be one of them."
+	"There are things in a programming language that MUST be enforced, this should not be one of them." |
 	"The \"really simple\" semicolon injection rules are violating the language grammar by incorrectly inserting a semi-colon where one was not required, nor requested." |
-	"Ignoring the problem or flippantly asserting there is no problem, is the worst thing they can do as it goes against the very reasons you design a new language for in the first place."
+	"Ignoring the problem or flippantly asserting there is no problem, is the worst thing they can do as it goes against the very reasons you design a new language for in the first place." |
 	i-dont-see
 ;
 
