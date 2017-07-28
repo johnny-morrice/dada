@@ -52,7 +52,7 @@ disbelief:
 ;
 
 insult:
-	"Either the language designers must admit their language is poorly designed, or they need to fix the problem!"
+	"Either the language designers must admit their language is poorly designed, or they need to fix the problem!" |
 	"I have suffered for years from people like you who insist on having their favourite style when it comes to " language-feature "s."
 ;
 
@@ -90,7 +90,8 @@ call-to-arms:
 ;
 
 address-start-part:
-	"C'mon google"
+	"C'mon google" |
+	"C'mon core developers"
 ;
 
 when-middle-part:
@@ -134,7 +135,12 @@ turn-question-back:
 ;
 
 clarify-audience:
-	"As for the folks on the thread saying \"" please-take-a-break "\" - sorry."
+	as-for-the-folks " saying \"" please-take-a-break "\" - sorry."
+;
+
+as-for-the-folks:
+	"As for the folks on this thread" |
+	"As for the core devs"
 ;
 
 please-take-a-break:
@@ -143,8 +149,8 @@ please-take-a-break:
 	"please, log off" |
 	"write to the Readers Digest" |
 	"write to the newspaper" |
-	"become a Cobol Developer" |
-	"remain a Cobol Developer" |
+	"please, become a Cobol Developer" |
+	"please, remain a Cobol Developer" |
 	"try chatting to Lennart Poettering"
 ;
 
