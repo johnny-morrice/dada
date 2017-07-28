@@ -37,7 +37,7 @@ language-feature:
 	"concurrency mechanism" |
 	"pre-processor" |
 	"evaluation order" |
-	"tail-call semantics"
+	"tail-call"
 
 ;
 
@@ -138,7 +138,7 @@ obvious-problem:
 ;
 
 problem-description:
-	"As you can see, the code has " language-feature "s in each required location."
+	"As you can see, the code has " syntax-feature "s in each required location."
 ;
 
 disbelief:
