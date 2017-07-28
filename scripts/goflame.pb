@@ -35,7 +35,9 @@ language-feature:
 	"lambda function" |
 	"function literal" |
 	"concurrency mechanism" |
-	"pre-processor"
+	"pre-processor" |
+	"evaluation order" |
+	"tail-call semantics"
 
 ;
 
