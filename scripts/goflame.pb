@@ -44,12 +44,14 @@ other-language:
 	"Cobol" |
 	"INTERCAL" |
 	"assembler" |
-	"PHP"
+	"PHP" |
+	"Rust"
 ;
 
 personage:
 	"Rob" |
 	"bradfitz"
+;
 
 people:
 	"folks on this thread" |
@@ -93,6 +95,31 @@ role:
 	"development lead"
 ;
 
+ecosystem-property:
+	"adoption" |
+	"stability" |
+	"performance"
+;
+
+compiler-property:
+	"compiler laziness" |
+	"compiler speed" |
+	"ease of use"
+;
+
+specification:
+	"language grammar" |
+	"specification" |
+	"spec"
+;
+
+documentation:
+	"Go Tour" |
+	"manual" |
+	specification
+;
+
+
 language-rule:
 	"one space between the function name and start of the code block is legal but 2 spaces is illegal" |
 	"exported function names start with an uppercase character"
@@ -135,7 +162,7 @@ rhetorical-question:
 question:
 	"Yes, I know I can write my own translator - but why?" |
 	"Is this just an error in \"" go-prog "\" or an error in the language spec?" |
-	"Really, lose adoption over compiler laziness?" |
+	"Really, lose " ecosystem-property " over " compiler-property "?" |
 	"So, I ask you - why is the above code illegal?" |
 	"Why are you blindly accepting something so foolish?" |
 	"Why would a language design enforce a feature that has no bearing on the " [ code-task | code-quality ] " of the code?"
@@ -150,8 +177,7 @@ ill-just-use-x:
 sarcastic-answer:
 	"Very nice.  LOL." |
 	"Give me a break..." |
-	"So much for \"" go-prog "\" reformatting legal code into the approved format." |
-	sarcastic-agreement
+	"So much for \"" go-prog "\" reformatting legal code into the approved format."
 ;
 
 call-to-arms:
@@ -167,7 +193,8 @@ call-to-arms-address:
 call-to-arms-when:
 	"when trying to pitch a new language" |
 	"when launching a new product" |
-	"when filing for bankruptcy"
+	"when trying to attract users" |
+	"when trying to program"
 ;
 
 call-to-arms-do-better:
@@ -187,19 +214,19 @@ considering-start-part:
 how-can-it-be-end-part:
 	"I don't see how that is true." |
 	"why favor one " language-feature " over another?" |
-	"you are not reading the same language grammar that I am."
+	"you are not reading the same " documentation " that I am."
 ;
 
 personal-attack:
-	clarify-audience " " [ insult | statement | turn-question-back " " statement ]
+	clarify-audience " " [ insult | turn-question-back " " insult ]
 ;
 
 statement:
 	"There are things in a " artifact " that MUST be enforced, this should not be one of them." |
-	"The \"really simple\" " language-feature " injection rules are violating the language grammar by incorrectly inserting a semi-colon where one was not required, nor requested." |
+	"The \"really simple\" " language-feature " injection rules are violating the " specification " by incorrectly inserting a semi-colon where one was not required, nor requested." |
 	"Ignoring the problem or flippantly asserting there is no problem, is the worst thing they can do as it goes against the very reasons you " task " for in the first place." |
 	"A programming language is a " artifact " and a language is supposed to make sense in regards to its intended purpose." |
-	"The behavior of the " language-feature "is wrong."
+	"The behavior of the " language-feature " is wrong."
 ;
 
 turn-question-back:
@@ -207,7 +234,11 @@ turn-question-back:
 ;
 
 clarify-audience:
-	"As for the " people " saying \"" please-take-a-break "\" - sorry."
+	"As for the " people " saying \"" please-take-a-break "\" - " whatever "."
+;
+
+whatever:
+	"sorry" | "whatever"
 ;
 
 please-take-a-break:
@@ -229,7 +260,7 @@ sarcastic-agreement:
 
 still-be-wrong:
 	"\"" go-prog "\" rules may still be wrong." |
-	people " cannot force my hand."
+	people " cannot force me to comply."
 ;
 
 take-the-biscuit:
@@ -253,7 +284,7 @@ old-fact:
 
 thats-why-get-off-my-lawn:
 	"it is the defacto standard." |
-	"it is the most efficient method of " activity "."
+	"it provides the most efficient method of " activity "."
 ;
 
 prediction:
@@ -265,6 +296,7 @@ reverted:
 ;
 
 realization:
-	"code is read in a lot of different places, most of which never display " syntax-feature " correctly"
-	"no-one will ever use it."
+	"code is read in a lot of different places, most of which never display " syntax-feature "s correctly." |
+	"no-one will ever use it." |
+	"everyone will have moved on to " other-language "."
 ;
