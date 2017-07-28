@@ -33,6 +33,13 @@ language-feature:
 
 ;
 
+other-language:
+	"Java" |
+	"Cobol" |
+	"INTERCAL" |
+	"assembler"
+;
+
 language-rule:
 	"one space between the function name and start of the code block is legal but 2 spaces is illegal" |
 	"exported function names start with an uppercase character"
@@ -75,7 +82,7 @@ question:
 ;
 
 ill-just-use-x:
-	"Heck, I can just stick with Java..."
+	"Heck, I can just stick with " other-language "..."
 ;
 
 sarcastic-answer:
