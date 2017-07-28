@@ -156,7 +156,6 @@ please-take-a-break:
 	"please, log off" |
 	"write to the Readers Digest" |
 	"write to the newspaper" |
-	"please, become a Cobol Developer" |
 	"please, remain a Cobol Developer" |
 	"try chatting to Lennart Poettering"
 ;
