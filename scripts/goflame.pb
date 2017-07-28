@@ -7,7 +7,7 @@ goflame:
 ;
 
 flame-para:
-	obvious-problem | rhetorical-question | call-to-arms | i-dont-see | personal-attack | sarcastic-agreement | get-off-my-lawn | prediction
+	obvious-problem | rhetorical-question | call-to-arms | i-dont-see | personal-attack | sarcastic-agreement | get-off-my-lawn | prediction | statement
 ;
 
 // convert the first character of a string to its uppercase equivalent
@@ -225,10 +225,11 @@ personal-attack:
 
 statement:
 	"There are things in a " artifact " that MUST be enforced, this should not be one of them." |
-	"The \"really simple\" " language-feature " injection rules are violating the " specification " by incorrectly inserting a semi-colon where one was not required, nor requested." |
+	"The \"really simple\" " language-feature " injection rules are violating the " specification " by incorrectly inserting a " syntax-feature " where one was not required, nor requested." |
 	"Ignoring the problem or flippantly asserting there is no problem, is the worst thing they can do as it goes against the very reasons you " task " for in the first place." |
-	"A programming language is a " artifact " and a language is supposed to make sense in regards to its intended purpose." |
-	"The behavior of the " language-feature " is wrong."
+	"A " artifact " is a " artifact " and a " artifact " is supposed to make sense in regards to its intended purpose." |
+	"The behavior of the " language-feature " is wrong." |
+	"Ideally, " language-feature "s seem like a good idea, but in practice they end up being more trouble then they are worth."
 ;
 
 turn-question-back:
