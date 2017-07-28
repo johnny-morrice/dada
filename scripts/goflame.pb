@@ -7,7 +7,7 @@ goflame:
 ;
 
 flame-para:
-	obvious-problem | rhetorical-question | call-to-arms | i-dont-see | personal-attack
+	obvious-problem | rhetorical-question | call-to-arms | i-dont-see | personal-attack | sarcastic-agreement
 ;
 
 // convert the first character of a string to its uppercase equivalent
@@ -28,7 +28,9 @@ language-feature:
 	"whitespace character" |
 	"lambda function" |
 	"function literal" |
-	"concurrency mechanism"
+	"concurrency mechanism" |
+	"semi-colons"
+
 ;
 
 language-rule:
@@ -41,7 +43,7 @@ obvious-problem:
 ;
 
 problem-description:
-	"As you can see, the code has semi-colons in each required location."
+	"As you can see, the code has " language-feature "s in each required location."
 ;
 
 disbelief:
@@ -51,10 +53,12 @@ disbelief:
 
 insult:
 	"Either the language designers must admit their language is poorly designed, or they need to fix the problem!"
+	"I have suffered for years from people like you who insist on having their favourite style when it comes to " language-feature "s."
 ;
 
 emphasis:
-	"Period."
+	"Period." |
+	"Which is surprising."
 ;
 
 rhetorical-question:
@@ -77,7 +81,8 @@ ill-just-use-x:
 sarcastic-answer:
 	"Very nice.  LOL." |
 	"Give me a break..." |
-	"So much for \"" go-prog "\" reformatting legal code into the approved format."
+	"So much for \"" go-prog "\" reformatting legal code into the approved format." |
+	sarcastic-agreement
 ;
 
 call-to-arms:
@@ -102,12 +107,13 @@ i-dont-see:
 
 considering-start-part:
 	"Considering \"" go-prog "\" throws the same error" |
-	"Given that, why not extend your metaphor to say that \"" language-rule "\""
+	"Given that you say \"" language-rule "\""
 ;
 
 how-can-it-be-end-part:
 	"I don't see how that is true." |
-	"why favor one " language-feature " over another?"
+	"why favor one " language-feature " over another?" |
+	"you are not reading the same language grammar that I am."
 ;
 
 personal-attack:
@@ -119,6 +125,7 @@ statement:
 	"The \"really simple\" semicolon injection rules are violating the language grammar by incorrectly inserting a semi-colon where one was not required, nor requested." |
 	"Ignoring the problem or flippantly asserting there is no problem, is the worst thing they can do as it goes against the very reasons you design a new language for in the first place." |
 	"A programming language is a language and language is supposed to make sense in regards to its intended purpose." |
+	"The behavior of the pre-processor is wrong." |
 	i-dont-see
 ;
 
@@ -132,5 +139,27 @@ clarify-audience:
 
 please-take-a-break:
 	"get over it" |
-	"go home"
+	"go home" |
+	"please, log off" |
+	"write to the Readers Digest" |
+	"write to the newspaper" |
+	"become a Cobol Developer" |
+	"remain a Cobol Developer" |
+	"try chatting to Lennart Poettering"
+;
+
+sarcastic-agreement:
+	"Yes, I agree with you that " [ "you" | "one" ] " " [ "can" | "cannot" ] " " take-the-biscuit |
+	"Yes, looking at the documentation page " there-is-not emphasis
+	"Ok, we can end the discussion but" there-is-not
+;
+
+take-the-biscuit:
+	"take one part of the spec in isolation to prove a point." |
+	"compile dust."
+;
+
+there-is-not:
+	"there is no full formal EBNF grammar in the appendix."
+	"it is not the grammar."
 ;
