@@ -44,17 +44,50 @@ other-language:
 
 people:
 	"folks on this thread" |
-	"core developers" |
-	"clique in control"
+	"core developers"
 ;
 
 time-period:
-	"years" | "months" | "days" | "hours"
+	"years" | "months" | "days"
+;
+
+activity:
+	"programming" |
+	"software development" |
+	"web scraping"
+;
+
+artifact:
+	"program" |
+	"library" |
+	"programming language"
+;
+
+code-task:
+	"compilation" |
+	"formatting"
+;
+
+code-quality:
+	"beauty" |
+	"efficiency"
+;
+
+role:
+	"core developer" |
+	"language designer" |
+	"development lead"
 ;
 
 language-rule:
 	"one space between the function name and start of the code block is legal but 2 spaces is illegal" |
 	"exported function names start with an uppercase character"
+;
+
+task:
+	"design a new language" |
+	"write a library" |
+	"go to work"
 ;
 
 obvious-problem:
@@ -70,8 +103,9 @@ disbelief:
 ;
 
 insult:
-	"Either the language designers must admit their language is poorly designed, or they need to fix the problem!" |
-	"I have suffered for years from people like you who insist on having their favourite style when it comes to " language-feature "s."
+	"Either the " role "s must admit their " artifact " is poorly designed, or they need to fix the problem!" |
+	"I have suffered for years from people like you who insist on having their favourite style when it comes to " language-feature "s." |
+	"I'm sorry to say you seem to have a very myopic view of " activity " in general."
 ;
 
 emphasis:
@@ -89,7 +123,7 @@ question:
 	"Really, lose adoption over compiler laziness?" |
 	"So, I ask you - why is the above code illegal?" |
 	"Why are you blindly accepting something so foolish?" |
-	"Why would a language design enforce a feature that has no bearing on the compilation of the code?"
+	"Why would a language design enforce a feature that has no bearing on the " [ code-task | code-quality ] " of the code?"
 ;
 
 ill-just-use-x:
@@ -111,15 +145,19 @@ call-to-arms:
 
 call-to-arms-address:
 	"C'mon google" |
-	"C'mon core developers"
+	"C'mon " people |
+	"C'mon Rob"
 ;
 
 call-to-arms-when:
-	"when trying to pitch a new language"
+	"when trying to pitch a new language" |
+	"when launching a new product" |
+	"when filing for bankruptcy"
 ;
 
 call-to-arms-do-better:
-	"you can (and should) do better than this..."
+	"you can (and should) do better than this..." |
+	"you ought to have invited an expert"
 ;
 
 i-dont-see:
@@ -142,10 +180,10 @@ personal-attack:
 ;
 
 statement:
-	"There are things in a programming language that MUST be enforced, this should not be one of them." |
+	"There are things in a " artifact " that MUST be enforced, this should not be one of them." |
 	"The \"really simple\" " language-feature " injection rules are violating the language grammar by incorrectly inserting a semi-colon where one was not required, nor requested." |
-	"Ignoring the problem or flippantly asserting there is no problem, is the worst thing they can do as it goes against the very reasons you design a new language for in the first place." |
-	"A programming language is a language and language is supposed to make sense in regards to its intended purpose." |
+	"Ignoring the problem or flippantly asserting there is no problem, is the worst thing they can do as it goes against the very reasons you " task " for in the first place." |
+	"A programming language is a " artifact " and a language is supposed to make sense in regards to its intended purpose." |
 	"The behavior of the " language-feature "is wrong."
 ;
 
@@ -169,7 +207,7 @@ please-take-a-break:
 
 sarcastic-agreement:
 	"Yes, I agree with you that " [ "you" | "one" ] " " [ "can" | "cannot" ] " " take-the-biscuit |
-	"Yes, looking at the documentation page " there-is-not emphasis |
+	"Yes, looking at the documentation page " there-is-not |
 	"Ok, we can end the discussion but " there-is-not |
 	"Clearly users of Go have to live with this or change language, but " still-be-wrong
 ;
@@ -186,12 +224,11 @@ take-the-biscuit:
 
 there-is-not:
 	"there is no full formal EBNF grammar in the appendix." |
-	"it is not the grammar." |
 	"I do not understand why."
 ;
 
 get-off-my-lawn:
-	"I've been programming for many " time-period " and " old-fact ", and " thats-why-get-off-my-lawn
+	"I've been programming for many " time-period ", and " old-fact ", and " thats-why-get-off-my-lawn
 ;
 
 old-fact:
@@ -201,6 +238,5 @@ old-fact:
 
 thats-why-get-off-my-lawn:
 	"it is the defacto standard." |
-	"it is the most efficient method" |
-	"I cannot stand change."
+	"it is the most efficient method of " activity "."
 ;
