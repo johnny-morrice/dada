@@ -66,7 +66,7 @@ go-org:
 ;
 
 time-period:
-	"years" | "months" | "days"
+	"decades" | "years" | "months" | "days"
 ;
 
 activity:
@@ -127,10 +127,37 @@ language-rule:
 	"exported function names start with an uppercase character"
 ;
 
+language-property:
+	"K&R" |
+	"stackless recursion" |
+	"concurrent" |
+	"procedural" |
+	"pure functional"
+;
+
 task:
 	"design a new language" |
 	"write a library" |
 	"go to work"
+;
+
+group:
+	"programming contingency" |
+	"sect of concurrent programmers" |
+	"9-front"
+;
+
+percentage:
+	"1%" |
+	"50%" |
+	"99%" |
+	"99.99%"
+;
+
+programmer:
+	"programmer" |
+	"software developer" |
+	"script kiddie"
 ;
 
 obvious-problem:
@@ -138,11 +165,37 @@ obvious-problem:
 ;
 
 problem-description:
-	"As you can see, the code has " syntax-feature "s in each required location."
+	"As you can see, the code has " syntax-feature "s in each required location." |
+	"I've noticed one small but very powerful " group " that I like to call the \"" ruin-everything "\" group that has foisted a number of bad things on the programming community." |
+	"One can even " mathematically " prove how ridiculous the " language-property " style is by using their own logic against them."
+;
+
+mathematically:
+	"mathematically" |
+	"scientifically" |
+	"inductively" |
+	"retroactively"
+;
+
+ruin-everything:
+	"turn everything in this industry on its head just because we say so" |
+	"ban everything we don't like" |
+	"programmer Taliban"
 ;
 
 disbelief:
-	"So I can't believe you would blindly agree with the " people "."
+	"So I can't believe you would blindly agree with the " people "." |
+	"I would say " percentage " of all " programmer "s use the " language-property" style." |
+	"I don't get it." |
+	"It's not only too radical, but also not needed." |
+	"Could it be that " go-org " created an inflexibility, " storm ", for no real good reason."
+;
+
+storm:
+	"a storm in a tea-cup" |
+	"and pissed on our parade" |
+	"put a truffler in your muffler" |
+	"put a zig in the zag"
 ;
 
 insult:
@@ -154,7 +207,9 @@ insult:
 
 emphasis:
 	"Period." |
-	"Which is surprising."
+	"Which is surprising." |
+	"That's the truth." |
+	"Arguing against any of these points is a waste of time."
 ;
 
 rhetorical-question:
@@ -201,7 +256,10 @@ call-to-arms-when:
 
 call-to-arms-do-better:
 	"you can (and should) do better than this..." |
-	"you ought to have invited an expert."
+	"you ought to have invited an expert." |
+	"you should have asked the community" |
+	"you should have deferred to tradition" |
+	"you could have asked the opinion of the academic community"
 ;
 
 i-dont-see:
@@ -210,13 +268,17 @@ i-dont-see:
 
 considering-start-part:
 	"Considering \"" go-prog "\" throws the same error" |
-	"Given that you say \"" language-rule "\""
+	"Given that you say \"" language-rule "\"" |
+	"Even if " language-feature "s were a good idea" |
+	"Even if the " people " knew what they were talking about"
 ;
 
 how-can-it-be-end-part:
 	"I don't see how that is true." |
 	"why favor one " language-feature " over another?" |
-	"you are not reading the same " documentation " that I am."
+	"you are not reading the same " documentation " that I am." |
+	"I'd still stick with " other-language "." |
+	"I don't see why I wouldn't use " other-language "."
 ;
 
 personal-attack:
