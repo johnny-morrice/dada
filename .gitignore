@@ -1,0 +1,14 @@
+*.o
+*.a
+*.yy.c
+*.log
+*.status
+*.cache
+Makefile
+y.output
+y.tab.c
+y.tab.h
+src/pb
+src/config.h
+inst
+dada

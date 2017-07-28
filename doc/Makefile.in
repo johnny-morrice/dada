@@ -1,7 +1,4 @@
-all:	 dada.info
-
-dada.info:	dada.texi
-	makeinfo dada.texi
+all:	 
 
 clean:
 	rm -f *~ *.info
