@@ -29,7 +29,7 @@ language-feature:
 	"lambda function" |
 	"function literal" |
 	"concurrency mechanism" |
-	"semi-colons"
+	"semi-colon"
 
 ;
 
